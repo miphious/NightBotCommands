@@ -1,0 +1,6 @@
+//shoutout command that takes a user and shouts out their twitch account
+Be sure to follow $(touser) at $(twitch $(touser) "{{url}})!
+//shoutout commant that takes a user and shouts out their twitch account with their last played game
+Be sure to follow $(touser) at $(twitch $(touser) "{{url}} They were last playing {{game}}").
+//uptime command that tells the user how long the streamer has been playing
+Stream uptime: $(twitch $(channel) "{{uptimeLength}}")
